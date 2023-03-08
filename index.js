@@ -5,7 +5,7 @@ const server = http.createServer((req, res) =>{
     let tableData = "<table border='1'><tr><th>Name</th><th>Height</th><th>Gender</th><th>Birth Year</th><th>url</th></tr></table>"
     if(url === `/`){
         res.write(<h1>Home Page</h1>)
-        res.end("https://placekitten.com/640/360")
+        res.end(`img src = "https://placekitten.com/640/360"`)
     }
     if(url === `/message`){
         res.write("Welcome to my Home Page ");
